@@ -1,4 +1,4 @@
-""" Funkcja anonimowa lambda oraz  funkcja sorted"""
+""" Funkcja anonimowa lambda oraz  ,metoda sort"""
 from os import system
 system("cls")
 
@@ -11,9 +11,8 @@ def sortuj(war):
 # według drugiego elementu każdej krotki
 
 
-lista_krotek.sort(key=sortuj)
-print(lista_krotek)  # Wyświetli: [(3, 1), (4, 2), (2, 3), (1,5)]
-
+lista_krotek.sort(key=sortuj, reverse=True)
+print(lista_krotek)
 
 lista_krotek.sort(key=lambda element: element[1], reverse=True)
 print(lista_krotek)
