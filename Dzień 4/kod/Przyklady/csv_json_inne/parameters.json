@@ -1,0 +1,33 @@
+
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "virtualNetworkName": {
+            "value": "VNET3"
+        },
+        "addressSpaces": {
+            "value": [
+                "172.18.0.0/20"
+            ]
+        },
+        "subnet0_name": {
+            "value": "sub1"
+        },
+        "subnet0_addressRange": {
+            "value": "172.18.1.0/24"
+        },
+        "subnet1_name": {
+            "value": "sub2"
+        },
+        "subnet1_addressRange": {
+            "value": "172.18.2.0/24"
+        },
+        "ddosProtectionPlanEnabled": {
+            "value": false
+        }
+    }
+}
